@@ -25,9 +25,9 @@ define("PASSWORD", !empty($_POST['password']));
 //check if inputs are populated
 //else if used to make sure nothing gets missed
 if (EMAIL == false) {
-  serverMessage("error", "Email cannot be left blank");
+  serverMessage("error", "Error: email cannot be left blank");
 } else if (PASSWORD == false) {
-  serverMessage("error", "Password cannot be left blank");
+  serverMessage("error", "Error: password cannot be left blank");
 } else {
   define("cleanEMAIL", clean($_POST['email']) );
   define("cleanPASSWORD", clean($_POST['password']) );
@@ -39,13 +39,13 @@ if (EMAIL == false) {
 
     //where you would querry the database for a matching password
     if ('$6$rounds=1000$845jsgdhf82xgdkt$lZzG9QPFNJjQTE0cLfKxFU6wwdXSdQspMDyC1BGNCOa4p2WPeCuLmcS5FmQfGVyBkmJ0LZRdUcudTmnIh8cBx/' == $safePassword) {
-      serverMessage("success", "You are now loged in");
+      serverMessage("success", "Success: you are now loged in");
     } else {
-      serverMessage("error", "email or password is incorrect");
+      serverMessage("error", "Error: email or password is incorrect");
     }
 
   } else {
-    serverMessage("error", "email or password is incorrect");
+    serverMessage("error", "Error: email or password is incorrect");
   }
 }
 
