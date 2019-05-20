@@ -1,0 +1,28 @@
+// ==========================================================================
+// Jack Mostert || General
+// ==========================================================================
+
+.page-splitter {
+  padding: 3rem 0px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0px auto;
+  width: 90%;
+
+  @media screen and (max-width: $large-screen) {
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: $color-pall-3;
+  color: $color-pall-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font;
+}

@@ -1,0 +1,30 @@
+// Variables
+@import "./components/variables.scss";
+
+// Reset
+@import "./components/normalize.scss";
+
+// components
+@import "./components/typography.scss";
+@import "./components/nav.scss";
+@import "./components/grids.scss";
+@import "./components/general.scss";
+
+
+// ==========================================================================
+// Jack Mostert || Main
+// ==========================================================================
+
+.CTA {
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.CTA a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  background-color: $color-pall-4;
+}

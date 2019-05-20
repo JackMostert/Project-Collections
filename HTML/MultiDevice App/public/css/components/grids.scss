@@ -1,0 +1,81 @@
+// ==========================================================================
+// Jack Mostert || Grids
+// ==========================================================================
+
+.hero-grid {
+  margin-top: 2rem;
+  display: grid;
+
+  @media only screen and (max-width: $large-screen) {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "imageLarge imageLarge"
+      "imageLarge imageLarge"
+      "image1 image2"
+      "image3 image4";
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "imageLarge imageLarge image1 image2"
+      "imageLarge imageLarge image3 image4";
+  }
+}
+
+.hero-grid-image-1 {
+  grid-area: imageLarge
+}
+
+.hero-grid-image-2 {
+  grid-area: image1
+}
+
+.hero-grid-image-3 {
+  grid-area: image2
+}
+
+.hero-grid-image-4 {
+  grid-area: image3
+}
+
+.hero-grid-image-5 {
+  grid-area: image4
+}
+
+// 
+
+.main-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: $column-gap-size;
+}
+
+.main-grid-image-1 {
+  // grid-area: image1;
+}
+
+.main-grid-image-2 {
+  // grid-area: image2;
+}
+
+.main-grid-image-3 {
+  // grid-area: image3;
+}
+
+.main-grid-image-4 {
+  // grid-area: image4;
+}
+
+.main-grid-image-5 {
+  margin-top: $row-gap-size;
+  grid-column: 1 / span 2;
+}
+
+.grid-card {
+  margin-top: $row-gap-size;
+  grid-column: 3 / span 2;
+}

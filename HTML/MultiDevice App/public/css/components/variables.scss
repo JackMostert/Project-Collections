@@ -1,0 +1,56 @@
+// ==========================================================================
+// Jack Mostert || variables
+// ==========================================================================
+//
+// Table of Contents:
+//
+//  1. Font sizes
+//  2. Grid Spacing
+//  3. Color
+//  4. Screen Sizes
+//  5. Fonts
+//  6. General
+
+
+
+// 1. Font sizes
+// ==========================================================================
+
+$header-xLarge: 3rem!default;
+$header-large: 1.7rem!default;
+$header-normal: 1.4rem!default;
+$footer-links: 1rem!default;
+$links: 1rem!default;
+$body: 1rem!default;
+
+// 2. Grid Spacing
+// ==========================================================================
+
+$column-gap-size: 20px;
+$row-gap-size: 20px;
+
+// 3. Color
+// ==========================================================================
+
+$color-pall-1: #DCD4CA;
+$color-pall-2: #7A6750;
+$color-pall-3: #685134;
+$color-pall-4: #4B361C;
+$color-pall-5: #36291B;
+
+// 4. Screen sizes
+// ==========================================================================
+
+$medium-screen: 500px;
+$large-screen: 900px;
+
+// 5. Fonts
+// ==========================================================================
+
+$main-font: Georgia, 'Times New Roman', Times, serif;
+$phone-font: Arial, Helvetica, sans-serif;
+
+// 6. General
+// ==========================================================================
+
+$body-header-spacing: 40px 0;

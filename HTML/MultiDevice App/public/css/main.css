@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3 {
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #36291B;
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #7A6750;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+a {
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-container {
+  height: 8.5rem;
+  background-color: white;
+}
+
+.nav-container nav {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
+}
+
+.nav-links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-links a {
+  color: #7A6750;
+  margin: 0px 20px;
+  padding: 10px;
+}
+
+.hero-grid {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-grid {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "imageLarge imageLarge" "imageLarge imageLarge" "image1 image2" "image3 image4";
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .hero-grid {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "imageLarge imageLarge image1 image2" "imageLarge imageLarge image3 image4";
+  }
+}
+
+.hero-grid-image-1 {
+  grid-area: imageLarge;
+}
+
+.hero-grid-image-2 {
+  grid-area: image1;
+}
+
+.hero-grid-image-3 {
+  grid-area: image2;
+}
+
+.hero-grid-image-4 {
+  grid-area: image3;
+}
+
+.hero-grid-image-5 {
+  grid-area: image4;
+}
+
+.main-grid {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.main-grid-image-5 {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.grid-card {
+  margin-top: 20px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+}
+
+.page-splitter {
+  padding: 3rem 0px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0px auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.card {
+  background-color: #685134;
+  color: #DCD4CA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.CTA {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.CTA a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  background-color: #4B361C;
+}
+/*# sourceMappingURL=main.css.map */
