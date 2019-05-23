@@ -2,6 +2,12 @@
 // Jack Mostert || General
 // ==========================================================================
 
+@media screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+}
+
 .page-splitter {
   padding: 3rem 0px;
   text-align: center;
@@ -10,7 +16,7 @@
 .container {
   max-width: 1600px;
   margin: 0px auto;
-  width: 90%;
+  width: 100%;
 
   @media screen and (max-width: $large-screen) {
     width: 100%;
@@ -25,4 +31,45 @@
   justify-content: center;
   align-items: center;
   font-family: $main-font;
+}
+
+img {
+  object-fit: cover;
+}
+
+.socialMediaPageFix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-pall-3;
+  margin: 80px 0px;
+
+  @media screen and (max-width: 700px) {
+    margin: 20px 0px;
+  }
+}
+
+.socialMediaPageFix {
+  display: grid;
+  grid-column-gap: $socialMediaSpacing;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @media screen and (max-width: 700px) {
+    grid-column-gap: $socialMediaSpacing - 30px;
+  }
+}
+
+.socialMediaPageFix img {
+  width: 40px;
+
+  @media screen and (min-width: 600px) and (max-width: 1000px) {
+    width: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 20px;
+  }
+
+  // https://codepen.io/sosuke/pen/Pjoqqp
+  filter: invert(89%) sepia(100%) saturate(2%) hue-rotate(240deg) brightness(111%) contrast(100%);
 }

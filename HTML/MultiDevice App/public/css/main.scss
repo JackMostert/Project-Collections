@@ -9,7 +9,11 @@
 @import "./components/nav.scss";
 @import "./components/grids.scss";
 @import "./components/general.scss";
+@import "./components/helper.scss";
+@import "./components/footer.scss";
 
+// Pages
+@import "./pages/about.scss";
 
 // ==========================================================================
 // Jack Mostert || Main
@@ -28,3 +32,4 @@
   color: white;
   background-color: $color-pall-4;
 }
+

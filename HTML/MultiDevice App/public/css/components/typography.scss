@@ -16,11 +16,16 @@ html {
   }
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   font-family: $main-font;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: lighter;
   letter-spacing: 2px;
 }
