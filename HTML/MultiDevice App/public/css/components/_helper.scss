@@ -1,0 +1,67 @@
+// ==========================================================================
+// Jack Mostert || Helpers
+// ==========================================================================
+//
+// Table of Contents:
+//
+//  1. General All
+//  2. Grid Helpers
+
+
+
+// 1. All
+// ==========================================================================
+
+.hidden-on-med-and-up {
+  @media screen and (min-width: $helperMedScreenSize) {
+    display: none;
+  }
+}
+
+.hidden-on-small-only {
+  @media screen and (max-width: $helperMedScreenSize) {
+    display: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.container-short {
+  max-width: 1000px !important;
+}
+
+// 2. Grid Helpers
+// ==========================================================================
+
+.galler-wide {
+  grid-column: span 2;
+}
+
+.gallery-sqare {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-sqare-wide {
+  grid-column: span 3;
+  grid-row: span 2;
+
+  @media screen and (max-width: 800px) {
+    grid-column: span 2;
+  }
+}
+
+.galler-tall {
+  grid-row: span 2;
+}
+
+.gallery-image-container {
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

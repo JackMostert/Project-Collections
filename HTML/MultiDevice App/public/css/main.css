@@ -7,24 +7,6 @@ img {
   width: 100%;
 }
 
-@media only screen and (min-width: 0) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 500px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  html {
-    font-size: 18px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -64,6 +46,24 @@ a {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 .nav-container {
@@ -368,6 +368,45 @@ img {
   }
 }
 
+.center {
+  text-align: center;
+}
+
+.container-short {
+  max-width: 1000px !important;
+}
+
+.galler-wide {
+  grid-column: span 2;
+}
+
+.gallery-sqare {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-sqare-wide {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-sqare-wide {
+    grid-column: span 2;
+  }
+}
+
+.galler-tall {
+  grid-row: span 2;
+}
+
+.gallery-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer-right-bottom {
   width: 500px;
   margin-right: 20px;
@@ -502,7 +541,9 @@ img {
   position: absolute;
   bottom: 200px;
   left: 200px;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
 }
 
 .about-hero-img-container {
@@ -510,7 +551,8 @@ img {
   right: 200px;
   top: 20vh;
   width: 100%;
-  height: 1000px;
+  height: 90%;
+  max-height: 800px;
   max-width: 700px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -522,9 +564,18 @@ img {
   height: 100%;
 }
 
+@media screen and (max-width: 700px) {
+  .about-hero-text {
+    left: 20px !important;
+  }
+  .about-hero-img-container {
+    right: 20px !important;
+  }
+}
+
 .container-about {
   margin: 0px auto;
-  margin-top: 500px;
+  margin-top: 200px;
   max-width: 1100px;
   width: 90%;
   text-align: center;
@@ -559,6 +610,8 @@ img {
 
 .overlay-container {
   position: relative;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about-overlay {
@@ -612,5 +665,43 @@ img {
           box-sizing: border-box;
   color: white;
   background-color: #4B361C;
+}
+
+.jewelary-gallery-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (25vw)[10];
+      grid-template-rows: repeat(10, 25vw);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+@media screen and (min-width: 1600px) {
+  .jewelary-gallery-container {
+    -ms-grid-rows: (minmax(auto, 400px))[10];
+        grid-template-rows: repeat(10, minmax(auto, 400px));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .jewelary-gallery-container {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (50vw)[20];
+        grid-template-rows: repeat(20, 50vw);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-image-container:nth-of-type(7),
+  .gallery-image-container:nth-of-type(9),
+  .gallery-image-container:nth-of-type(16) {
+    grid-column: span 2 !important;
+    grid-row: span 2 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

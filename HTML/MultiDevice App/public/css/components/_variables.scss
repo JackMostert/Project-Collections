@@ -9,19 +9,24 @@
 //  3. Color
 //  4. Screen Sizes
 //  5. Fonts
-//  6. General
+//  6. Fonts
+//  7. General
 
 
 
 // 1. Font sizes
 // ==========================================================================
 
-$header-xLarge: 3rem!default;
-$header-large: 1.7rem!default;
-$header-normal: 1.4rem!default;
-$footer-links: 1rem!default;
-$links: 1rem!default;
-$body: 1rem!default;
+$fontRootSmall: 14px;
+$fontRootMed: 16px;
+$fontRootLarge: 18px;
+
+$header-xLarge: 3rem !default;
+$header-large: 1.7rem !default;
+$header-normal: 1.4rem !default;
+$footer-links: 1rem !default;
+$links: 1rem !default;
+$body: 1rem !default;
 
 // 2. Grid Spacing
 // ==========================================================================
@@ -48,10 +53,21 @@ $large-screen: 900px;
 // 5. Fonts
 // ==========================================================================
 
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$phone-font: Arial, Helvetica, sans-serif;
+$main-font: Georgia,
+'Times New Roman',
+Times,
+serif;
+$phone-font: Arial,
+Helvetica,
+sans-serif;
 
-// 6. General
+// 6. Font Formats
+// ==========================================================================
+
+$MainletterSpacing: 2px;
+$SecondaryletterSpacing: 1px;
+
+// 7. General
 // ==========================================================================
 
 $body-header-spacing: 40px 0;

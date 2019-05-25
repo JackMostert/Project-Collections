@@ -1,19 +1,19 @@
 // Variables
-@import "./components/variables.scss";
+@import "./components/_variables.scss";
 
 // Reset
-@import "./components/normalize.scss";
+@import "./components/_normalize.scss";
 
 // components
-@import "./components/typography.scss";
-@import "./components/nav.scss";
-@import "./components/grids.scss";
-@import "./components/general.scss";
-@import "./components/helper.scss";
-@import "./components/footer.scss";
+@import "./components/_typography.scss";
+@import "./components/_nav.scss";
+@import "./components/_grids.scss";
+@import "./components/_general.scss";
+@import "./components/_helper.scss";
+@import "./components/_footer.scss";
 
 // Pages
-@import "./pages/about.scss";
+@import "./pages/_about.scss";
 
 // ==========================================================================
 // Jack Mostert || Main
@@ -31,5 +31,36 @@
   box-sizing: border-box;
   color: white;
   background-color: $color-pall-4;
+}
+
+
+.jewelary-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (min-width: 1600px) {
+    grid-template-rows: repeat(10, minmax(auto, 400px));
+  }
+
+  grid-template-rows: repeat(10, 25vw);
+  grid-column-gap: $column-gap-size;
+  grid-row-gap: $row-gap-size;
+
+  @media screen and (max-width: 800px) {
+    grid-column-gap: $column-gap-size - 10px;
+    grid-row-gap: $row-gap-size - 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(20, 50vw);
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .gallery-image-container:nth-of-type(7),
+  .gallery-image-container:nth-of-type(9),
+  .gallery-image-container:nth-of-type(16) {
+    grid-column: span 2 !important;
+    grid-row: span 2 !important;
+  }
 }
 

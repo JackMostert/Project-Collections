@@ -11,7 +11,9 @@
   position: absolute;
   bottom: 200px;
   left: 200px;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
 }
 
 .about-hero-img-container {
@@ -19,7 +21,8 @@
   right: 200px;
   top: 20vh;
   width: 100%;
-  height: 1000px;
+  height: 90%;
+  max-height: 800px;
   max-width: 700px;
   box-sizing: border-box;
   border: solid white 16px;
@@ -30,16 +33,26 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .about-hero-text {
+    left: 20px !important;
+  }
+
+  .about-hero-img-container {
+    right: 20px !important;
+  }
+}
+
 .container-about {
   margin: 0px auto;
-  margin-top: 500px;
+  margin-top: 200px;
   max-width: 1100px;
   width: 90%;
   text-align: center;
-  
+
   p {
-      letter-spacing: 2px;
-      line-height: 40px;
+    letter-spacing: 2px;
+    line-height: 40px;
   }
 }
 
@@ -65,6 +78,7 @@
 
 .overlay-container {
   position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .about-overlay {
@@ -82,7 +96,7 @@
 
 .about-full {
   grid-column: span 2;
-  text-align: center!important;
+  text-align: center !important;
 
   img {
     max-height: 500px;
