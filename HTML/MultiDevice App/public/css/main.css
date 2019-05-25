@@ -5,6 +5,8 @@
 
 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h1,
@@ -297,11 +299,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .socialMediaPageFix-container {

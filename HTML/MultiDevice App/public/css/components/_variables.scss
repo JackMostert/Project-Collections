@@ -15,60 +15,57 @@
 
 
 // 1. Font sizes
-// ==========================================================================
+// ==============================================================
 
-$fontRootSmall: 14px;
-$fontRootMed: 16px;
-$fontRootLarge: 18px;
+$fontRootSmall:                                              14px;
+$fontRootMed:                                                16px;
+$fontRootLarge:                                              18px;
 
-$header-xLarge: 3rem !default;
-$header-large: 1.7rem !default;
-$header-normal: 1.4rem !default;
-$footer-links: 1rem !default;
-$links: 1rem !default;
-$body: 1rem !default;
+$header-xLarge:                                     3rem !default;
+$header-large:                                    1.7rem !default;
+$header-normal:                                   1.4rem !default;
+$footer-links:                                      1rem !default;
+$links:                                             1rem !default;
+$body:                                              1rem !default;
 
-// 2. Grid Spacing
-// ==========================================================================
+// 2. layout styles
+// ==============================================================
 
-$column-gap-size: 20px;
-$row-gap-size: 20px;
-$socialMediaSpacing: 70px;
+$column-gap-size:                                           20px;
+$row-gap-size:                                              20px;
+$socialMediaSpacing:                                        70px;
+$containerSize:                                           1600px;
+$containerSize-small:                                     1000px;
 
 // 3. Color
-// ==========================================================================
+// ==============================================================
 
-$color-pall-1: #DCD4CA;
-$color-pall-2: #7A6750;
-$color-pall-3: #685134;
-$color-pall-4: #4B361C;
-$color-pall-5: #36291B;
+$color-pall-1:                                         #DCD4CA;
+$color-pall-2:                                         #7A6750;
+$color-pall-3:                                         #685134;
+$color-pall-4:                                         #4B361C;
+$color-pall-5:                                         #36291B;
 
 // 4. Screen sizes
-// ==========================================================================
+// ==============================================================
 
-$medium-screen: 500px;
-$large-screen: 900px;
+$medium-screen:                                            500px;
+$large-screen:                                             900px;
 
 // 5. Fonts
-// ==========================================================================
+// ==============================================================
 
-$main-font: Georgia,
-'Times New Roman',
-Times,
-serif;
-$phone-font: Arial,
-Helvetica,
-sans-serif;
+$main-font:             Georgia, 'Times New Roman', Times, serif;
+$phone-font:                        Arial, Helvetica, sans-serif;
 
 // 6. Font Formats
-// ==========================================================================
+// ==============================================================
 
-$MainletterSpacing: 2px;
-$SecondaryletterSpacing: 1px;
+$MainletterSpacing:                                          2px;
+$SecondaryletterSpacing:                                     1px;
 
 // 7. General
-// ==========================================================================
+// ==============================================================
 
-$body-header-spacing: 40px 0;
-$helperMedScreenSize: 800px;
+$body-header-spacing:                                     40px 0;
+$helperMedScreenSize:                                      800px;
